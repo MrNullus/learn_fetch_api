@@ -2,18 +2,7 @@
 const url = 'https://jsonplaceholder.typicode.com/posts';
 
 // # Select elements from interface
-function Selectus(elements) {
-	listElments = new Array();
-
-	elements.forEach(( element ) => {
-		let item = document.querySelector(element);
-
-		listElments.push(item);
-		console.log(item);
-	});
-	
-	return listElments;
-}
+import Selectus from 'qselectus/script.js';
 
 const [
 	/* loading */
