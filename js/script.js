@@ -37,18 +37,14 @@ let postId = urlSearchParams.get('id');
 
 // # Create elements
 function createElemnts(obj) {
-
 	let arr = new Array();
-	let elmnts = obj.elmnts;
 
-	for (let item of elmnts) {
+	obj.elmnts.forEach(( item ) => {
 		elmnt = document.createElement(item);
-
 		arr.push(elmnt);	
-	}
+	});
 
 	return arr;
-
 }
 
 
